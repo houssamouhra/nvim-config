@@ -41,6 +41,10 @@ Most language servers and development tools are managed through Mason.
 
 ## Installation
 
+This configuration is designed to work with [GNU Stow](https://www.gnu.org/software/stow/) and is included as a submodule in my [dotfiles](https://github.com/houssamouhra/dotfiles).
+
+If you're using the full dotfiles repo, install it from there instead. The steps below are for standalone use.
+
 ### 1. Back up your existing configuration
 
 ```bash
@@ -52,10 +56,24 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 ### 2. Clone the repository
 
 ```bash
-git clone https://github.com/houssamouhra/nvim-config.git ~/.config/nvim
+git clone https://github.com/houssamouhra/nvim-config.git ~/nvim-config
 ```
 
-### 3. Start Neovim
+### 3. Install and stow
+
+```bash
+sudo pacman -S stow
+
+cd ~/nvim-config
+stow .
+```
+
+This creates the symlink:
+```text
+~/.config/nvim → ~/nvim-config/.config/nvim
+```
+
+### 4. Start Neovim
 
 ```bash
 nvim
