@@ -10,8 +10,6 @@ return {
       typescriptreact = { 'eslint_d' },
       vue = { 'eslint_d' },
       python = { 'ruff' },
-      sh = { 'shellcheck' },
-      markdown = { 'vale' },
       dockerfile = { 'hadolint' },
       sql = { 'sqruff' },
     },
