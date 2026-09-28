@@ -17,8 +17,8 @@ return {
   },
 
   opts = function()
-    local prettier = {
-      'prettierd',
+    local oxfmt = {
+      'oxfmt',
       stop_after_first = true,
     }
 
@@ -26,16 +26,16 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'ruff_format' },
-        javascript = prettier,
-        typescript = prettier,
-        javascriptreact = prettier,
-        typescriptreact = prettier,
-        vue = prettier,
-        html = prettier,
-        css = prettier,
-        markdown = prettier,
-        json = prettier,
-        yaml = prettier,
+        javascript = oxfmt,
+        typescript = oxfmt,
+        javascriptreact = oxfmt,
+        typescriptreact = oxfmt,
+        vue = oxfmt,
+        html = oxfmt,
+        css = oxfmt,
+        markdown = oxfmt,
+        json = oxfmt,
+        yaml = oxfmt,
         sql = { 'sqruff' },
         sh = { 'shfmt' },
         tex = { 'tex-fmt' },
