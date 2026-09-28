@@ -115,8 +115,8 @@ return {
     require('mason-tool-installer').setup {
       ensure_installed = {
         'stylua',
-        'eslint_d',
-        'prettierd',
+        'oxfmt',
+        'oxlint',
         'hadolint',
         'ruff',
         'shfmt',
