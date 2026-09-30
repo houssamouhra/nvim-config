@@ -53,7 +53,7 @@ return {
       },
 
       enforce_regular_tabs = true,
-      always_show_bufferline = true,
+      always_show_bufferline = false,
 
       offsets = {
         {
